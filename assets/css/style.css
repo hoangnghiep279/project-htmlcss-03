@@ -316,14 +316,18 @@ a {
 .feature .column {
     width: 33.3%;
 }
+
 .feature .row .subtitle {
     margin-top: 16px;
+}
+.feature .row .subtitle a {
     color: #0d1111;
     font-size: 2rem;
     font-weight: 600;
 }
 
 .feature .column .desc {
+    margin-top: 16px;
     color: #9da6a5;
     font-size: 1.6rem;
     line-height: 1.68;
