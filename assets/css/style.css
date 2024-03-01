@@ -11,6 +11,11 @@ html {
     font-size: 62.5%;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
@@ -56,12 +61,13 @@ a {
 }
 /* header */
 .header {
+    background: #fff;
     position: sticky;
     top: -46px;
+    padding: 52px 0 0;
     z-index: 1;
 }
 .header .body {
-    padding: 52px 0 8px;
     display: flex;
     align-items: center;
 }
