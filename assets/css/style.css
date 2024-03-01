@@ -4,6 +4,7 @@
 
 :root {
     --primary-color: #1ebfc1;
+    --color-title: #0d1111;
 }
 
 html {
@@ -16,11 +17,19 @@ body {
 }
 
 /* common */
+
 .line-clamp {
     display: -webkit-box;
-    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-line-clamp: var(--line-clamp, 1);
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.break-all {
+    word-break: break-all;
 }
 
 a {
@@ -129,7 +138,7 @@ a {
 
 .hero .info .heading {
     margin-top: 18px;
-    color: #0d1111;
+    color: var(--color-title);
     font-size: 6.2rem;
     font-weight: 700;
     line-height: 1.16;
@@ -196,7 +205,7 @@ a {
 }
 
 .hero .img-block .desc {
-    color: #0d1111;
+    color: var(--color-title);
     font-size: 1.2rem;
     font-weight: 550;
 }
@@ -261,4 +270,56 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* ========feature============= */
+.feature {
+    margin-top: 130px;
+}
+
+.feature .body {
+    width: 87.5%;
+}
+.feature .caption {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.feature .title {
+    margin: 18px 0;
+    width: 577px;
+    color: var(--color-title);
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.33;
+}
+
+.feature .main-desc {
+    width: 590px;
+    color: #767e7e;
+    font-size: 1.8rem;
+}
+
+.feature .row {
+    margin-top: 80px;
+    display: flex;
+    gap: 180px;
+}
+
+.feature .column {
+    width: 33.3%;
+}
+.feature .row .subtitle {
+    margin-top: 16px;
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.feature .column .desc {
+    color: #9da6a5;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.68;
 }
