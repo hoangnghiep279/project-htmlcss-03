@@ -280,6 +280,7 @@ a {
 
 /* ========feature============= */
 .feature {
+    scroll-margin-top: 54px;
     margin-top: 130px;
 }
 
@@ -335,6 +336,7 @@ a {
 
 /* course */
 .popular-course {
+    scroll-margin-top: 54px;
     margin-top: 130px;
 }
 .popular-course .caption {
@@ -468,6 +470,7 @@ a {
 
 /* =========feedback====== */
 .feedback {
+    scroll-margin-top: 54px;
     margin-top: 264px;
 }
 .feedback .body {
